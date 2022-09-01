@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Page</title>
+</head>
+
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">Adventure's Hall</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <button id="login-btn" type="button" class="btn btn-light" data-bs-toggle="modal"
+                data-bs-target="#staticBackdropLogin">
+                Log-in
+            </button>
+            <button id="signup-btn" type="button" class="btn btn-light" data-bs-toggle="modal"
+                data-bs-target="#staticBackdropSignup">
+                Sign-up
+            </button>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Hall Associates
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="merchants.html">Merchants Guild</a></li>
+                    <li><a class="dropdown-item" href="bards.html">Bard Collage</a></li>
+                    <li><a class="dropdown-item" href="magic.html">House of Magic</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/farmland.png" class="d-block w-100" alt="farmlands">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/pirateship.png" class="d-block w-100" alt="pirateship.">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/castle.png" class="d-block w-100" alt="castle">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <h3>Quest Board</h3>
+        </div>
+    </nav>
+    <div class="card-group">
+        <div class="card">
+            <img src="./assets/cowboy.png" class="card-img-top" alt="cowboy">
+            <div class="card-body">
+                <p id="cowboy-q" class="card-text">Oh Howdy! It's a mighty fine day. But the sun is all kinds of nasty.
+                    I am in some
+                    major need if some water 'er. Could you help a feller out?' Can help me out partner?</p>
+                <button id="cowboy-btn" type="button" class="btn btn-light" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdropCowboy">
+                    Help him out
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/pirate.png" class="card-img-top" alt="pirate">
+            <div class="card-body">
+                <p id="pirate-q" class="card-text">Arrg avast me hearties! Look here you scallywags. Aye need help
+                    getting the treasure! You better get on it or I'll cast ye out to sea!</p>
+                <button id="pirate-btn" type="button" class="btn btn-light" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdropPirate">
+                    Start Digging
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/knight.png" class="card-img-top" alt="knight">
+            <div class="card-body">
+                <p id="knight-q" class="card-text">Good Morrow friend! This day is a good one no? But there is something
+                    amiss. I
+                    have misplaced my horse. Can you help me kind stranger?</p>
+                <button id="knight-btn" type="button" class="btn btn-light" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdropKnight">
+                    Call Horse
+                </button>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <h3>Help for Hire</h3>
+        </div>
+    </nav>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Applicant #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="card">
+                        <img src="./assets/ninja.png" class="card-img-top" alt="ninja">
+                        <div class="card-body">
+                            <h1>Hamamoto Takeshi</h1>
+                            <h5 class="card-title">Hire for: 50,000 ¥</h5>
+                            <p class="card-text">Silent but deadly. They can sneak in, assasinate and do an assortment
+                                of sabotauge jobs. Having such a silent life they are not great at conversation.</p>
+                                <button type="button" class="btn btn-secondary">Hire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Applicant #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="card">
+                        <img src="./assets/Samurai.png" class="card-img-top" alt="samurai">
+                        <div class="card-body">
+                            <h1>Suto Tetsuo</h1>
+                            <h5 class="card-title">Hire for: 75,000 ¥</h5>
+                            <p class="card-text">Honor, the only true way for the blade. Trained in the sword and bow he
+                                will do his all to honor you. Is a perfectionist of his own skills.</p>
+                                <button type="button" class="btn btn-secondary">Hire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Applicant #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="card">
+                        <img src="./assets/viking.png" class="card-img-top" alt="viking">
+                        <div class="card-body">
+                            <h1>Kollsvein Vottsson</h1>
+                            <h5 class="card-title">Hire for: 10 cows</h5>
+                            <p class="card-text">Born in Finland he has been all across the sea. Has a heart for the
+                                toughest of jobs. Is a bit hungry for battle.</p>
+                                <button type="button" class="btn btn-secondary">Hire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdropCowboy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Out Questing...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Looking for water....
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Give Up</button>
+                    <button id="cowboy-btn" onclick="farmHand()" type="button" class="btn btn-light"
+                        data-bs-dismiss="modal">
+                        Found a watering hole!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdropKnight" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Out Questing...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Calling for horse....
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Give Up</button>
+                    <button id="knight-btn" onclick="callWild()" type="button" class="btn btn-light"
+                        data-bs-dismiss="modal">Found
+                        Her!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdropPirate" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Out Questing...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Digging for treature....
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Give Up</button>
+                    <button id="pirate-btn" onclick="treasureRun()" type="button" class="btn btn-light"
+                        data-bs-dismiss="modal">
+                        Hit gold!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-->
+    <div class="modal fade" id="staticBackdropLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Return to the Adventure</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">For Mail Updates</label>
+                        </div>
+                        <button id="login-btn" onclick="logIn()" type="submit" class="btn btn-light">Log In</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- modal -->
+
+        <div class="modal fade" id="staticBackdropSignup" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Join the Adventure</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail2" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail2"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword2">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">For Mail Updates</label>
+                            </div>
+                            <button id="signup-btn" onclick="signUp()" type="submit" class="btn btn-light">Sign
+                                Up</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

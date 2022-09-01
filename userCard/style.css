@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.seattle{
+    vertical-align: top;
+    display: inline-block;
+}
+.container{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 900px;
+    border: solid black 1px;
+}
+.title-card{
+    height: 100px;
+    /* width: 600px; */
+    background-color: cyan;
+}
+.nav-bar{
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+}
+.profile{
+    position: relative;
+    display: flex;
+}
+.link{
+    vertical-align: top;
+}

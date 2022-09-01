@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LikePage</title>
+</head>
+
+<body>
+    <div id="main-page">
+        <div class="nav">
+            <h1 class="nav-title">Profile</h1>
+            <div class="right-nav">
+                <ul class="nav-links">
+                    <li><a class="a-nav" href="#">Home</a></li>
+                    <li><a class="active">My Profile</a></li>
+                    <li><a class="a-nav">Find Connections</a></li>
+                </ul>
+                <button class="btn">Sign Out</button>
+            </div>
+        </div>
+        <div id="prof">
+            <img src="user-circle.png" alt="user-image" height="50px">
+            <p></p>
+            <a class="prof-link" href="#">Add Avatar</a>
+            <h3>John Doe</h3>
+        </div>
+        <div id="right">
+            <div class="def">
+                <div class="card-top">
+                    <h2>Juan Hernadez</h2>
+                    <button class="like-btn" onclick="liked(this)">Like <i class="fa-solid fa-thumbs-up"></i></button>
+                    <p><span id="p-like">0</span></p>
+                </div>
+                <div class="card-body">
+                    <h3>Want a bike? <a class="text-a" href="#">Buy Here!</a></h3>
+                </div>
+            </div>
+            <div class="def">
+                <div class="card-top">
+                    <h2>Samatha Smitthens</h2>
+                    <button class="like-btn" onclick="liked1(this)">Like <i class="fa-solid fa-thumbs-up"></i></button>
+                    <p><span id="p-like1">0</span></p>
+                </div>
+                <div class="card-body">
+                    <h3>I have some beautiful flowers. <a class="text-a" href="#">Here look!</a></h3>
+                </div>
+            </div>
+            <div class="def">
+                <div class="card-top">
+                    <h2>Kiley Richards</h2>
+                    <button class="like-btn" onclick="liked2(this)">Like <i class="fa-solid fa-thumbs-up"></i></button>
+                    <p><span id="p-like2">0</span></p>
+                </div>
+                <div class="card-body">
+                    <h3>Check out this! I have a new album. <a class="text-a" href="#">Preorder Now!</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7bd86abbf0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

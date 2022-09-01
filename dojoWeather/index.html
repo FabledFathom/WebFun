@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Predictions</title>
+</head>
+
+<body>
+    <div id="main-page">
+        <div class="nav">
+            <h1 class="nav-title">Weather</h1>
+            <div class="right-nav">
+                <li class="nav-links">
+                    <li><a onclick="cityWide()" class="a-nav">Burbank</a></li>
+                    <li><a onclick="cityWide()" class="active">Chicago</a></li>
+                    <li><a onclick="cityWide()" class="a-nav">Dallas</a></li>
+                </li>
+            </div>
+        </div>
+        <div class="con">
+            <h1 class="con-title">San Jose</h1>
+                <div class="right-con">
+                    <p>Tempreature in </p>
+                    <select class="con-select">
+                        <option>Fahrenheit</option>
+                        <option>Celsius</option>
+                        <option>Kelvin</option>
+                    </select>
+                </div>
+            <div>
+        </div>
+        </div>
+        <div id="weather-bx">
+            <div class="container">
+                <div class="cont-body">
+                    <h3>Today</h3>
+                    <img src="./assets/some_clouds.png" alt="some-clouds">
+                    <h4>Some Clouds</h4>
+                    <p class="f-temp">67 F</p>
+                    <p class="f-temp">75 F</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cont-body">
+                    <h3>Tommorow</h3>
+                    <img src="./assets/some_rain.png" alt="some-rain">
+                    <h4>Some Rain</h4>
+                    <p class="f-temp">66 F</p>
+                    <p class="f-temp">61 F</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cont-body">
+                    <h3>Saturday</h3>
+                    <img src="./assets/some_sun.png" alt="some-sun">
+                    <h4>Some Sun</h4>
+                    <p class="f-temp">71 F</p>
+                    <p class="f-temp">85 F</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cont-body">
+                    <h3>Sunday</h3>
+                    <img src="./assets/some_sun.png" alt="some-sun">
+                    <h4>Some Clouds</h4>
+                    <p class="f-temp">67 F</p>
+                    <p class="f-temp">75 F</p>
+                </div>
+            </div>
+        </div>
+        <div id="cookies" class="alignments">
+            <img class="img-cookie" src="./assets/cookie.png" width="10px" alt="cookies">
+            <p>Accept Cookies for this web page? If you want to know what that means then <a href="#">Read More</a></p>
+            <button id="btn-cookie" onclick="removeCookies()">Accept</button>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
